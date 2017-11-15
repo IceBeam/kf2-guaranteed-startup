@@ -18,7 +18,7 @@ The script starts KFgame.exe, waits for it to close and makes the next decision 
 
 ## How to download
 
-Click the "Clone or download" button. Choose the download method of your preference.
+[Direct link to the ZIP archive](https://github.com/IceBeam/kf2-guaranteed-startup/archive/master.zip)
 
 If you download it as a ZIP archive, extract the contents to any directory.
 
@@ -44,9 +44,17 @@ git clone https://github.com/IceBeam/kf2-guaranteed-startup.git
 
     This is the default path to Killing Floor 2 executable (KFGame.exe). You'll need to change it.
 
-3. Go to your Killing Floor 2 installation directory. From there, change directory to Binaries, and then to Win64. If you're using Windows Explorer to browse files, you should be able to get the full path by right-clicking any part of the address bar and choosing "Copy address as text".
+3. Go to your Killing Floor 2 installation directory. Steam Client can automatically open it for you:
+    - Open Steam.
+    - Select "Library".
+    - Right-click "Killing Floor 2".
+    - Select "Properties" from the drop-down list.
+    - Switch to the "Local Files" tab.
+    - Click "Browse Local Files".
 
-4. Paste the full path between the quotes (it is important to keep the quotes if your path has spaces).
+4. From there, change directory to ```Binaries```, and then to ```Win64```. If you're using Windows Explorer to browse files, you should be able to get the full path by right-clicking any part of the address bar and choosing "Copy address as text".
+
+5. Paste the full path between the quotes (it is important to keep the quotes if your path has spaces).
 
     ```cmd
     set KFGameExePath="C:\YourSteamDir\SteamApps\common\killingfloor2\Binaries\Win64\"
@@ -54,12 +62,12 @@ git clone https://github.com/IceBeam/kf2-guaranteed-startup.git
 
     __Note__: directory `"C:\YourSteamDir\SteamApps\common\killingfloor2\Binaries\Win64\"` is used as an example. Yours will be different.
 
-5. If you run the game with additional launch parameters, assign them to the `LaunchParams` variable. Paste them in the next line, after the `=` character:
+6. If you run the game with additional launch parameters, assign them to the `LaunchParams` variable. Paste them in the next line, after the `=` character:
 
     ```cmd
     set LaunchParams=-nostartupmovies -and -something -else
     ```
 
-6. Save the changes.
+7. Save the changes.
 
-7. Congratulations! The setup is done, and you can use __kf2-guaranteed-startup.cmd__ whenever you need to be sure that Killing Floor 2 starts when you tell it to.
+8. Congratulations! The setup is done, and you can use __kf2-guaranteed-startup.cmd__ whenever you need to be sure that Killing Floor 2 starts when you tell it to.
