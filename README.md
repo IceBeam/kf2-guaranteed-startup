@@ -62,10 +62,10 @@ git clone https://github.com/IceBeam/kf2-guaranteed-startup.git
 
     __Note__: directory `"C:\YourSteamDir\SteamApps\common\killingfloor2\Binaries\Win64\"` is used as an example. Yours will be different.
 
-6. If you run the game with additional launch parameters, assign them to the `LaunchParams` variable. Paste them in the next line, after the `=` character:
+6. If you run the game with additional launch parameters, assign them to the `LaunchOptions` variable. Paste them in the next line, after the `=` character:
 
     ```cmd
-    set LaunchParams=-nostartupmovies -and -something -else
+    set LaunchOptions=-nostartupmovies -and -something -else
     ```
 
 7. Save the changes.

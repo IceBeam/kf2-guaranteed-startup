@@ -2,7 +2,7 @@
 cls
 
 set KFGameExePath="C:\Program Files (x86)\Steam\SteamApps\common\killingfloor2\Binaries\Win64\"
-set LaunchParams=-nostartupmovies
+set LaunchOptions=-nostartupmovies
 
 echo ================================================================================
 echo Killing Floor 2 Guaranteed Startup Script
@@ -44,12 +44,12 @@ exit
 
 :StartOrRetry
 echo (%Time%) Attempting to start Killing Floor 2 ...
-start /wait KFGame.exe %LaunchParams%
+start /wait KFGame.exe %LaunchOptions%
 :: Non-zero return value indicates abnormal exit: issue, error, crash, etc.
 if %ErrorLevel% neq 0 (
     call :RetryOnCrash
 )
-echo .
+echo.
 echo Killing Floor 2 has been closed normally. Press any key to finish.
 pause
 exit
