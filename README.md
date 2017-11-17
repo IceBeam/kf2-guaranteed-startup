@@ -42,7 +42,7 @@ git clone https://github.com/IceBeam/kf2-guaranteed-startup.git
     set KFGameExePath="C:\Program Files (x86)\Steam\SteamApps\common\killingfloor2\Binaries\Win64\"
     ```
 
-    This is the default path to Killing Floor 2 executable (KFGame.exe). You'll need to change it.
+    This is the default path to Killing Floor 2 executable (KFGame.exe). If you have Killing Floor 2 installed somewhere else, you'll need to change it. Otherwise, skip to step 6.
 
 3. Go to your Killing Floor 2 installation directory. Steam Client can automatically open it for you:
     - Open Steam.
@@ -71,3 +71,5 @@ git clone https://github.com/IceBeam/kf2-guaranteed-startup.git
 7. Save the changes.
 
 8. Congratulations! The setup is done, and you can use __kf2-guaranteed-startup.cmd__ whenever you need to be sure that Killing Floor 2 starts when you tell it to.
+
+    __Note__: if your Killing Floor 2 installation resides in a system partition ( e.g. `C:\Program Files (x86)` ), the script will __not__ see KFGame.exe until you run it as Administrator due to insufficient privileges.

@@ -37,6 +37,8 @@ exit
 
 :ExeNotFound
 echo ERROR: KFGame.exe not found in %KFGameExePath%. Exiting.
+echo.
+echo ATTENTION: if KFGame.exe does exist in this directory, try running the script as Administrator. Check section "How to use" (Step 8) in README.md for further information.
 pause
 exit
 
